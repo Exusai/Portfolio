@@ -365,7 +365,7 @@ $(function() {
         var skillList2 =
           "Solidworks / Fusion 360 / Inventor / Matlab / Simulink / Blender / Unity / Figma / Adobe XD / Adobe After Effects / Adobe Photoshop / Adobe Premiere Pro / Microsoft Office";
         var experience =
-          "SOTD: AWWWARDS, FWA, CSS Design Awards <br>Webbys / Siteinspire / Google Experiments / Fonts in Uses";
+          "";
         var bio2 = $(
           '<h3 class="logo folded about"><div class="line solid"><p class="yeehover" style="margin-top:-0.8em">&nbsp</p><p>' +
             aboutTitle +

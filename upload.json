@@ -1,0 +1,104 @@
+{
+    "desc": "<b>Basically waifu2x implemented on tensorflow.</b><br>I wanted to implement waifu2x on a mobile App with processing on device, but due to my lack of knowledge I was unable to convert a caffe model to a tensorflow model. Thus I copied the architecture of waifu2x which is based on VGG11, added some normalization (BatchNormalization, Dropout and leakyReLu), then I collected my own dataset of 10k+ 2k and 4k illustrations and spended a week on training.<br>In general, I consider the results acceptable. After training the super resolution model I decided to add 3 more layers to make a \"denoise filter\" which allso worked really well.<br><br><b>    Training on 1.5k images (first test):</b><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/GCOe5kMTM5E?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br><br><b>    Training on 8k+ images:</b><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/BfkCcgn8TQI?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br><br><b>    Tutorials:</b><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/LtZOdzGeHko\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/eiKkV9DMpxM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br><br><a href=\"https://github.com/Exusai/SuperResolutionWaifuNN\">Github repo</a>",
+    "displayName": "Exusai Super Resolution",
+    "hide": false,
+    "home": {
+        "css": "",
+        "url": "https://github.com/Exusai/SuperResolutionWaifuNN/raw/master/PortfolioSRWNNWEBVid.mp4"
+    },
+    "img": [
+        {
+            "aspect": "",
+            "caption": "Implementation of my super resolution neural network",
+            "css": "",
+            "hide": "",
+            "home": true,
+            "homeOrder": "",
+            "id": "exusaiImg",
+            "orientation": "horizontal",
+            "photo": "https://github.com/Exusai/SuperResolutionWaifuNN/raw/master/PortfolioSRWNNWEBVid.mp4",
+            "project": "srwnn",
+            "tags": "Python, Tensorflow, Dart, Flutter, Flask, IOS, Android, Web",
+            "text": "<b>Basically waifu2x implemented on tensorflow.</b><br>I wanted to implement waifu2x on a mobile App with processing on device, but due to my lack of knowledge I was unable to convert a caffe model to a tensorflow model. Thus I copied the architecture of waifu2x which is based on VGG11, added some normalization (BatchNormalization, Dropout and leakyReLu), then I collected my own dataset of 10k+ 2k and 4k illustrations and spended a week on training.<br>In general, I consider the results acceptable. After training the super resolution model I decided to add 3 more layers to make a \"denoise filter\" which allso worked really well.<br><br><b>    Training on 1.5k images (first test):</b><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/GCOe5kMTM5E?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br><br><b>    Training on 8k+ images:</b><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/BfkCcgn8TQI?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br><br><b>    Tutorials:</b><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/LtZOdzGeHko\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/eiKkV9DMpxM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br><br><a href=\"https://github.com/Exusai/SuperResolutionWaifuNN\">Github repo</a>",
+            "video": "",
+            "year": 2021
+        },
+        {
+            "aspect": "",
+            "caption": "",
+            "css": "",
+            "hide": "",
+            "home": "",
+            "homeOrder": "",
+            "id": "exusaiImg",
+            "orientation": "horizontal",
+            "photo": "https://github.com/Exusai/SuperResolutionWaifuNN/raw/master/tests/test3%20(2).png",
+            "project": "",
+            "tags": "",
+            "text": "",
+            "video": "",
+            "year": ""
+        },
+        {
+            "aspect": "",
+            "caption": "Super Resolution example, on the left is the low resolution image, on the center is the image generated by the model and the ground truth is the image on the right.",
+            "css": "",
+            "hide": "",
+            "home": "",
+            "homeOrder": "",
+            "id": "exusaiImg",
+            "orientation": "horizontal",
+            "photo": "https://github.com/Exusai/SuperResolutionWaifuNN/raw/master/tests/srwnnTest1.png",
+            "project": "",
+            "tags": "",
+            "text": "",
+            "video": "",
+            "year": ""
+        },
+        {
+            "aspect": "",
+            "caption": "Super Resolution example 2, on the left is the low resolution image, on the center is the image generated by the model and the ground truth is the image on the right.",
+            "css": "",
+            "hide": "",
+            "home": "",
+            "homeOrder": "",
+            "id": "exusaiImg",
+            "orientation": "horizontal",
+            "photo": "https://github.com/Exusai/SuperResolutionWaifuNN/raw/master/tests/srwnnTest2.png",
+            "project": "",
+            "tags": "",
+            "text": "",
+            "video": "",
+            "year": ""
+        },
+        {
+            "aspect": "",
+            "caption": "De-blur filter example, on the left is the low resolution image with blur, on the center is the image generated by the model and the ground truth is the image on the right.",
+            "css": "",
+            "hide": "",
+            "home": "",
+            "homeOrder": "",
+            "id": "exusaiImg",
+            "orientation": "horizontal",
+            "photo": "https://github.com/Exusai/SuperResolutionWaifuNN/raw/master/tests/testdenoise3.png",
+            "project": "",
+            "tags": "",
+            "text": "",
+            "video": "",
+            "year": ""
+        }
+        
+    ],
+    "order": 1,
+    "tags": [
+        "Python",
+        "Tensorflow",
+        "Dart",
+        "Flutter", 
+        "Flask", 
+        "IOS", 
+        "Android", 
+        "Web"
+    ],
+    "year": 2021
+}
