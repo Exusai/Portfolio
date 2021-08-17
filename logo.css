@@ -194,11 +194,30 @@
     display: block;
     margin-right: 175px;
     margin-top: 50px;
-    width: 30%;
+    width: 25%;
     animation: shake 30s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
+
+  @media screen and (max-width: 800px) { 
+
+    .center { display: none; }  
+    
+  }
+  @media screen and (max-height: 560px) { 
+
+    .center { width: 15%; }  
+    
+  }
+  @media screen and (max-height: 370px) { 
+
+    .center { display: none; }  
+    
+  }
+  /* @media screen and (min-width: 1182px) and (max-width: 2570px) { 
+    .center { display: none; }   
+  } */
   
   @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
