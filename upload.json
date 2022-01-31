@@ -1,5 +1,5 @@
 {
-    "desc": "<b>Marketplace app for selling flowers and gifts like if it was Uber Eats</b><br><br>App developed with <b>Flutter</b>. <b>Login</b>, <b>storage</b> and <b>database</b> are implemented with <b>Firebase</b><br><br>Payments are implmented using <b>Stripe</b> and <b>Firebase Fuctions</b>.<br><img src=\"assets/images/prAssets/payment-example.gif\" alt=\"Payment example inside Stripe's sandbox.\"><br>Although this app was intended to be an startup I don't really think it's ever going to be finished due to my partner's lack of interest.<br><br>",
+    "desc": "<b>Marketplace app for selling flowers and gifts like if it was Uber Eats</b><br><br>App developed with <b>Flutter</b>. <b>Login</b>, <b>storage</b> and <b>database</b> are implemented with <b>Firebase</b><br><br>Payments are implmented using <b>Stripe</b> and <b>Firebase Fuctions</b>.<br><img src=\"https://github.com/Exusai/Portfolio/raw/master/assets/images/prAssets/payment-example.gif\" alt=\"Payment example inside Stripe's sandbox.\"><br>Although this app was intended to be an startup I don't really think it's ever going to be finished due to my partner's lack of interest.<br><br>",
     "displayName": "Project Fleur",
     "hide": false,
     "home": {
@@ -19,7 +19,7 @@
             "photo": "https://player.vimeo.com/video/672140068?color=ffffff&byline=0&portrait=0&title=0",
             "project": "srwnn",
             "tags": "Flutter, IOS, Android, Dart, Stripe, Firebase",
-            "text": "<b>Marketplace app for selling flowers and gifts like if it was Uber Eats</b><br><br>App developed with <b>Flutter</b>. <b>Login</b>, <b>storage</b> and <b>database</b> are implemented with <b>Firebase</b><br><br>Payments are implmented using <b>Stripe</b> and <b>Firebase Fuctions</b>.<br><img src=\"assets/images/prAssets/payment-example.gif\" alt=\"Payment example inside Stripe's sandbox.\"><br>Although this app was intended to be an startup I don't really think it's ever going to be finished due to my partner's lack of interest.<br><br>",
+            "text": "<b>Marketplace app for selling flowers and gifts like if it was Uber Eats</b><br><br>App developed with <b>Flutter</b>. <b>Login</b>, <b>storage</b> and <b>database</b> are implemented with <b>Firebase</b><br><br>Payments are implmented using <b>Stripe</b> and <b>Firebase Fuctions</b>.<br><img src=\"https://github.com/Exusai/Portfolio/raw/master/assets/images/prAssets/payment-example.gif\" alt=\"Payment example inside Stripe's sandbox.\"><br>Although this app was intended to be an startup I don't really think it's ever going to be finished due to my partner's lack of interest.<br><br>",
             "video": "",
             "year": 2021
         },
@@ -32,7 +32,7 @@
             "homeOrder": "",
             "id": "Fleur",
             "orientation": "horizontal",
-            "photo": "",
+            "photo": "https://github.com/Exusai/Portfolio/raw/master/assets/images/prAssets/App%20Flores.png",
             "project": "srwnn",
             "tags": "",
             "text": "",
@@ -43,7 +43,7 @@
             "aspect": "",
             "caption": "Mockups",
             "css": "",
-            "hide": "",
+            "hide": "https://github.com/Exusai/Portfolio/raw/master/assets/images/prAssets/Delivery%20App.png",
             "home": true,
             "homeOrder": "",
             "id": "Fleur",
