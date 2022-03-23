@@ -1,10 +1,10 @@
 {
-    "desc": "<h1 id=\"self-driving-with-ros-autonomos-simulator-gazebo-keras-y-tensorflow\">Self driving with ROS, AutoNOMOS Simulator, Gazebo, Keras y Tensorflow</h1><p>This convolutional neural network is based on PilotNet but includes a set of convolutional layers dedicated to process information from a LIDAR sensor as an image:</p><iframe width=\"600\" height=\"350\" src=\"https://user-images.githubusercontent.com/47704357/159609637-f5589152-954e-4159-abfe-c469e469486a.mp4\" frameborder=\"0\" allowfullscreen></iframe><p>An implementation of PilotNet by Nvidia:</p><iframe width=\"600\" height=\"350\" src=\"https://user-images.githubusercontent.com/47704357/159609500-d74c3e72-141e-4dad-a784-cc00acf443eb.mp4\" frameborder=\"0\" allowfullscreen></iframe><p>To train the network, manual data was recovered using a manual control node based on the ROS's joy node. Then, the data was uploaded to Google Drive in order to use Google Colab. Both models (with lidar and no lidar) were trainded for around 10 epochs on approximately 82746 images each using the tensorflow input pipeline. After the first 3 epochs convolutional layers and dense layers were alternately \"frozen\" in to let the other type of layer reduce error on it's own.</p><p>Neural network training <a href=\"https://github.com/Exusai/EK_AutoNOMOS_Sim/blob/master/src/autonomos_gazebo_simulation/scripts/autodrive_evation_train.ipynb\">code.</a></p><a href=\"https://github.com/Exusai/EK_AutoNOMOS_Sim/tree/master/src/autonomos_gazebo_simulation/scripts/models\">Trainded models here</a>.<p><a href=\"https://github.com/Exusai/EK_AutoNOMOS_Sim/tree/master/src/autonomos_gazebo_simulation/scripts\">Scripts used to train the network</a>, includes manual drive node to collect data and the notebooks used to train the network.</p><details>  <summary>About AutoNOMOS</summary>  <p>Stand alone repo for the AutoNOMOS Gazebo simulation. Please check the <a href=\"https://github.com/EagleKnights/Eagle_Knights-Wiki/wiki\">wiki</a> for information on how to use the simulation. </p>   <p>    The files are divided in two: <br>    * Gazebo plugin: Files to interact with the gazebo model. <br>    * Autonomos: files of the model, world and example launch files. <br>  </p></details>",
-    "displayName": "Autonomous Vehicle",
+    "desc": "<h1 class=\"code-line\" data-line-start=0 data-line-end=1 ><a id=\"Visual_Navigation_For_Drones_0\"></a>Visual Navigation For Drones</h1><p class=\"has-line-data\" data-line-start=\"1\" data-line-end=\"2\">The simulator used is AirSim from Microsoft, window identification was implmented on the Unreal version of AirSim and precision landing wa implemented in the Unity version.</p><h2 class=\"code-line\" data-line-start=3 data-line-end=4 ><a id=\"Precision_Landing_3\"></a>Precision Landing</h2><p class=\"has-line-data\" data-line-start=\"4\" data-line-end=\"6\">This is achieved by a proportional visual controller that identifies the center of the marker and moves<br>the drone in a parallel plane to the marker until it is centered enough, then it descends and this process is repeated until the dron is at a safa landing distance.</p><iframe width=\"600\" height=\"350\" src=\"https://user-images.githubusercontent.com/47704357/159741744-82feedfa-6210-4662-b68b-878478764728.mp4\" frameborder=\"0\" allowfullscreen></iframe><h2 class=\"code-line\" data-line-start=9 data-line-end=10 ><a id=\"Window_Identification_and_Segmentation_9\"></a>Window Identification and Segmentation</h2><p class=\"has-line-data\" data-line-start=\"10\" data-line-end=\"12\">The idea was to implment a neural network able to identify windows and then fly trough them, however due to time constraints only the identification of windows<br>was implemented.</p><p class=\"has-line-data\" data-line-start=\"13\" data-line-end=\"14\">Data was collected using AirSim´s API, as shown bellow. The data and images provided by the simulaton were written to a directory in pascal_voc format.</p><iframe width=\"600\" height=\"350\" src=\"https://user-images.githubusercontent.com/47704357/159741963-3b32b3c2-6f21-4ab3-abef-77314825307c.mp4\" frameborder=\"0\" allowfullscreen></iframe><p class=\"has-line-data\" data-line-start=\"17\" data-line-end=\"19\">Thanks to the simulation, a lot of information was gathered with different climatic and illumination conditions.<br>Using Google Colab, a version of <a href=\"https://arxiv.org/abs/1911.09070\">EfficientDet</a> was trained.</p><p class=\"has-line-data\" data-line-start=\"20\" data-line-end=\"22\">Simulated environment:<br><img src=\"https://user-images.githubusercontent.com/47704357/159744851-db05cf19-8470-4343-b929-a673b3eaafdc.png\" alt=\"image\"></p><p class=\"has-line-data\" data-line-start=\"23\" data-line-end=\"25\">Data collected:<br><img src=\"https://user-images.githubusercontent.com/47704357/159744908-63239ef0-038b-48c6-ab7f-ed6c927e2eec.png\" alt=\"image\"></p><p class=\"has-line-data\" data-line-start=\"26\" data-line-end=\"28\">Network test with dust storm:<br><img src=\"https://user-images.githubusercontent.com/47704357/159745289-a284dbf7-e376-456f-8656-552cbb95a5c4.png\" alt=\"image\"></p><p class=\"has-line-data\" data-line-start=\"29\" data-line-end=\"31\">Network test in simulation:<br><img src=\"https://user-images.githubusercontent.com/47704357/159745254-0ad858dc-46ae-4ec5-991e-0bfdc5250152.png\" alt=\"image\"></p>",
+    "displayName": "Drone Visual Nav",
     "hide": false,
     "home": {
         "css": "",
-        "url": "https://firebasestorage.googleapis.com/v0/b/portfolio-baf3b.appspot.com/o/Comp 1.mp4?alt=media&token=e35a1825-2822-4f42-883b-0e8f3483d55a"
+        "url": "https://user-images.githubusercontent.com/47704357/159742056-8f13d125-e0a6-4c1d-b70c-002addbdfad8.mp4"
     },
     "img": [
         {
@@ -14,22 +14,59 @@
             "hide": "",
             "home": true,
             "homeOrder": "",
-            "id": "autonomosCar",
+            "id": "droneVisualNav",
             "orientation": "horizontal",
-            "photo": "https://player.vimeo.com/video/672140068?color=ffffff&byline=0&portrait=0&title=0",
-            "project": "autonomosCar",
-            "tags": "Python, Tensorflow, ROS",
-            "text": "<h1 id=\"self-driving-with-ros-autonomos-simulator-gazebo-keras-y-tensorflow\">Self driving with ROS, AutoNOMOS Simulator, Gazebo, Keras y Tensorflow</h1><p>This convolutional neural network is based on PilotNet but includes a set of convolutional layers dedicated to process information from a LIDAR sensor as an image:</p><iframe width=\"600\" height=\"350\" src=\"https://user-images.githubusercontent.com/47704357/159609637-f5589152-954e-4159-abfe-c469e469486a.mp4\" frameborder=\"0\" allowfullscreen></iframe><p>An implementation of PilotNet by Nvidia:</p><iframe width=\"600\" height=\"350\" src=\"https://user-images.githubusercontent.com/47704357/159609500-d74c3e72-141e-4dad-a784-cc00acf443eb.mp4\" frameborder=\"0\" allowfullscreen></iframe><p>To train the network, manual data was recovered using a manual control node based on the ROS's joy node. Then, the data was uploaded to Google Drive in order to use Google Colab. Both models (with lidar and no lidar) were trainded for around 10 epochs on approximately 82746 images each using the tensorflow input pipeline. After the first 3 epochs convolutional layers and dense layers were alternately \"frozen\" in to let the other type of layer reduce error on it's own.</p><p>Neural network training <a href=\"https://github.com/Exusai/EK_AutoNOMOS_Sim/blob/master/src/autonomos_gazebo_simulation/scripts/autodrive_evation_train.ipynb\">code.</a></p><a href=\"https://github.com/Exusai/EK_AutoNOMOS_Sim/tree/master/src/autonomos_gazebo_simulation/scripts/models\">Trainded models here</a>.<p><a href=\"https://github.com/Exusai/EK_AutoNOMOS_Sim/tree/master/src/autonomos_gazebo_simulation/scripts\">Scripts used to train the network</a>, includes manual drive node to collect data and the notebooks used to train the network.</p><details>  <summary>About AutoNOMOS</summary>  <p>Stand alone repo for the AutoNOMOS Gazebo simulation. Please check the <a href=\"https://github.com/EagleKnights/Eagle_Knights-Wiki/wiki\">wiki</a> for information on how to use the simulation. </p>   <p>    The files are divided in two: <br>    * Gazebo plugin: Files to interact with the gazebo model. <br>    * Autonomos: files of the model, world and example launch files. <br>  </p></details>",
+            "photo": "https://github.com/Exusai/AirSimTestPython/raw/master/imgs/env.png",
+            "project": "droneVisualNav",
+            "tags": "Python, Tensorflow, ROS, Unity, Unreal",
+            "text": "<h1 class=\"code-line\" data-line-start=0 data-line-end=1 ><a id=\"Visual_Navigation_For_Drones_0\"></a>Visual Navigation For Drones</h1><p class=\"has-line-data\" data-line-start=\"1\" data-line-end=\"2\">The simulator used is AirSim from Microsoft, window identification was implmented on the Unreal version of AirSim and precision landing wa implemented in the Unity version.</p><h2 class=\"code-line\" data-line-start=3 data-line-end=4 ><a id=\"Precision_Landing_3\"></a>Precision Landing</h2><p class=\"has-line-data\" data-line-start=\"4\" data-line-end=\"6\">This is achieved by a proportional visual controller that identifies the center of the marker and moves<br>the drone in a parallel plane to the marker until it is centered enough, then it descends and this process is repeated until the dron is at a safa landing distance.</p><iframe width=\"600\" height=\"350\" src=\"https://user-images.githubusercontent.com/47704357/159741744-82feedfa-6210-4662-b68b-878478764728.mp4\" frameborder=\"0\" allowfullscreen></iframe><h2 class=\"code-line\" data-line-start=9 data-line-end=10 ><a id=\"Window_Identification_and_Segmentation_9\"></a>Window Identification and Segmentation</h2><p class=\"has-line-data\" data-line-start=\"10\" data-line-end=\"12\">The idea was to implment a neural network able to identify windows and then fly trough them, however due to time constraints only the identification of windows<br>was implemented.</p><p class=\"has-line-data\" data-line-start=\"13\" data-line-end=\"14\">Data was collected using AirSim´s API, as shown bellow. The data and images provided by the simulaton were written to a directory in pascal_voc format.</p><iframe width=\"600\" height=\"350\" src=\"https://user-images.githubusercontent.com/47704357/159741963-3b32b3c2-6f21-4ab3-abef-77314825307c.mp4\" frameborder=\"0\" allowfullscreen></iframe><p class=\"has-line-data\" data-line-start=\"17\" data-line-end=\"19\">Thanks to the simulation, a lot of information was gathered with different climatic and illumination conditions.<br>Using Google Colab, a version of <a href=\"https://arxiv.org/abs/1911.09070\">EfficientDet</a> was trained.</p><p class=\"has-line-data\" data-line-start=\"20\" data-line-end=\"22\">Simulated environment:<br><img src=\"https://user-images.githubusercontent.com/47704357/159744851-db05cf19-8470-4343-b929-a673b3eaafdc.png\" alt=\"image\"></p><p class=\"has-line-data\" data-line-start=\"23\" data-line-end=\"25\">Data collected:<br><img src=\"https://user-images.githubusercontent.com/47704357/159744908-63239ef0-038b-48c6-ab7f-ed6c927e2eec.png\" alt=\"image\"></p><p class=\"has-line-data\" data-line-start=\"26\" data-line-end=\"28\">Network test with dust storm:<br><img src=\"https://user-images.githubusercontent.com/47704357/159745289-a284dbf7-e376-456f-8656-552cbb95a5c4.png\" alt=\"image\"></p><p class=\"has-line-data\" data-line-start=\"29\" data-line-end=\"31\">Network test in simulation:<br><img src=\"https://user-images.githubusercontent.com/47704357/159745254-0ad858dc-46ae-4ec5-991e-0bfdc5250152.png\" alt=\"image\"></p>",
             "video": "",
             "year": 2022
+        },
+        {
+            "aspect": "",
+            "caption": "Homography implemented on drone",
+            "css": "",
+            "hide": "",
+            "home": false,
+            "homeOrder": "",
+            "id": "droneVisualNav",
+            "orientation": "horizontal",
+            "photo": "https://github.com/Exusai/AirSimTestPython/raw/master/imgs/dron_homografia.png",
+            "project": "",
+            "tags": "",
+            "text": "",
+            "video": "",
+            "year": ""
+        },
+        {
+            "aspect": "",
+            "caption": "Drone hoovering marker",
+            "css": "",
+            "hide": "",
+            "home": false,
+            "homeOrder": "",
+            "id": "droneVisualNav",
+            "orientation": "horizontal",
+            "photo": "https://github.com/Exusai/AirSimTestPython/raw/master/imgs/hoovering_marker.png",
+            "project": "",
+            "tags": "",
+            "text": "",
+            "video": "",
+            "year": ""
         }
+
+
         
     ],
-    "order": 4,
+    "order": 0,
     "tags": [
         "Python",
         "Tensorflow", 
-        "ROS"
+        "ROS",
+        "OpenCV",
+        "Unity",
+        "Unreal"
     ],
-    "year": 2021
+    "year": 2022
 }
