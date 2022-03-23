@@ -1,0 +1,20 @@
+<h1 id="self-driving-with-ros-autonomos-simulator-gazebo-keras-y-tensorflow">Self driving with ROS, AutoNOMOS Simulator, Gazebo, Keras y Tensorflow</h1>
+<p>This convolutional neural network is based on PilotNet but includes a set of convolutional layers dedicated to process information from a LIDAR sensor as an image:</p>
+<iframe width="600" height="350" src="https://user-images.githubusercontent.com/47704357/159609637-f5589152-954e-4159-abfe-c469e469486a.mp4" frameborder="0" allowfullscreen></iframe>
+<p>An implementation of PilotNet by Nvidia:</p>
+<iframe width="600" height="350" src="https://user-images.githubusercontent.com/47704357/159609500-d74c3e72-141e-4dad-a784-cc00acf443eb.mp4" frameborder="0" allowfullscreen></iframe>
+
+<p>To train the network, manual data was recovered using a manual control node based on the ROS's joy node. Then, the data was uploaded to Google Drive in order to use Google Colab. Both models (with lidar and no lidar) were trainded for around 10 epochs on approximately 82746 images each using the tensorflow input pipeline. After the first 3 epochs convolutional layers and dense layers were alternately "frozen" in to let the other type of layer reduce error on it's own.</p>
+
+<p>Neural network training <a href="https://github.com/Exusai/EK_AutoNOMOS_Sim/blob/master/src/autonomos_gazebo_simulation/scripts/autodrive_evation_train.ipynb">code.</a></p>
+<a href="https://github.com/Exusai/EK_AutoNOMOS_Sim/tree/master/src/autonomos_gazebo_simulation/scripts/models">Trainded models here</a>.
+<p><a href="https://github.com/Exusai/EK_AutoNOMOS_Sim/tree/master/src/autonomos_gazebo_simulation/scripts">Scripts used to train the network</a>, includes manual drive node to collect data and the notebooks used to train the network.</p>
+<details>
+  <summary>About AutoNOMOS</summary>
+  <p>Stand alone repo for the AutoNOMOS Gazebo simulation. Please check the <a href="https://github.com/EagleKnights/Eagle_Knights-Wiki/wiki">wiki</a> for information on how to use the simulation. </p> 
+  <p>
+    The files are divided in two: <br>
+    * Gazebo plugin: Files to interact with the gazebo model. <br>
+    * Autonomos: files of the model, world and example launch files. <br>
+  </p>
+</details>
