@@ -336,7 +336,7 @@ $(function() {
       nav.append(navList);
   
       nav.append(
-        "<div class='twitter'><a href='https://github.com/Exusai' target='blank'>Github</a> <div class='twitter'><a href='https://twitter.com/fo0rzaken' target='blank'>Twitter</a></div><div class='linkedin'><a href='https://www.linkedin.com/in/samuel-arellano-a-4a5674197/' target='blank'>LinkedIn</a></div><div class='about'><a>About</a></div>"
+        "<div class='twitter'><a href='https://github.com/Exusai' target='blank'>Github</a></div><div class='linkedin'><a href='https://www.linkedin.com/in/samuel-arellano-a-4a5674197/' target='blank'>LinkedIn</a></div><div class='about'><a>About</a></div>"
       );
       firebaseContainer.append(nav, homeContainer, secondaryContainer);
   
