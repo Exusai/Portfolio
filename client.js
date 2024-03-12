@@ -17,7 +17,7 @@ $(function() {
   
     firebase.initializeApp(config);
     var database = firebase.database();
-    var projectRef = database.ref();
+    var projectRef = database.ref("projects");
     var projectID = [];
   
     projectRef.once("value").then(function(snap) {
@@ -37,8 +37,8 @@ $(function() {
       var navList = $('<section><div class="line"></div></section>');
       var homeContainer = $('<container class="homeContainer"></container>');
   
-      var refData = snap.val();
-      var projectData = refData["projects"];
+      //var refData = snap.val();
+      var projectData = snap.val();
       projectID = Object.keys(projectData);
       // console.log(projectID);
   
